@@ -1,13 +1,5 @@
 class Staff:
-"""  Students and Teachers form the Staff of a School  Common attributes + specific Attributes for
-Students and Teachers"""
-""" Methods for:
-displaying full info
-display full name only
-setting fee 
-checking if date is a workday
-"""
-    
+
     annual_fee = 2000.00 ## class variable valid for all instances
     staff_num = 0
 
@@ -41,11 +33,7 @@ checking if date is a workday
     def __len__(self):
         return len(self.fullname())
 
-"""subclasses  with submethods:
-specific annual fee corrected annual with waving
-full students info
-method to represent collective fee of more students could be adjusted to representing collective fee of students with same BY
-method for teachers info + subject they teach"""
+
 
 class Students(Staff):
     def __init__(self, fname, lname, gender,wave,BY):
