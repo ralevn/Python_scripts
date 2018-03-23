@@ -1,5 +1,5 @@
 class Staff:
-
+"""  Students and Teachers form the Staff of a School   """
     annual_fee = 2000.00 ## class variable valid for all instances
     staff_num = 0
 
