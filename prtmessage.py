@@ -29,3 +29,4 @@ print "Uppercase: \"%s\" and lower case:  \"%s\"" %(TEXT.upper(),TEXT.lower())
 print "reverse:   \"%s\""%TEXT[::-1]
 print "Print it vertically:"
 for char in TEXT: print char
+     
