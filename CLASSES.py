@@ -2,6 +2,8 @@ class Staff:
 
     annual_fee = 2000.00 ## class variable valid for all instances
     staff_num = 0
+    stud_num = 0
+    teachers_num = 0
 
     def __init__(self, fname, lname, gender):
         self.fname = fname  ## instance variable
@@ -40,6 +42,7 @@ class Students(Staff):
         Staff.__init__(self,fname,lname,gender)   ## initialize the parent attributes from parent init method
         self.BY = BY
         self.wave = wave
+        Staff.stud_num += 1
 
     def pers_fee(self):
             return Staff.annual_fee * (1 - self.wave)
@@ -52,6 +55,8 @@ class Teachers(Staff):
     def __init__(self, fname, lname, gender,subject):
         Staff.__init__(self,fname,lname,gender)
         self.subject = subject
+        Staff.teachers_num +=1
+
     def teac_info (self):  ## regular method applies on instances
         return '==> %s %s:  %s - %s, subject:  %s' %(self.fname,self.lname,self.gender,self.email,self.subject)
 
@@ -66,7 +71,7 @@ print stud_2.fname, stud_2.lname,stud_2.gender,stud_2.BY,stud_2.email + "\n"
 print 'Standart Annual fee:  ' , Staff.annual_fee
 print(stud_1.stud_info())
 print (Students.stud_info(stud_2))
-print 'Staff #: ',Staff.staff_num
+print 'Staff #: {0} Students #:{1} Teachers # {2} '.format(Staff.staff_num,Staff.stud_num,Staff.teachers_num)
 ## Now we correct the standart annual fee
 Staff.set_fee(1921.00)
 print '\nNew Annual fee:  ' , Staff.annual_fee
@@ -76,7 +81,7 @@ print (Students.stud_info(stud_2))
 print (teach_1.teac_info())
 import datetime
 w_day = datetime.date(2017,12,8)
-print 'Workday: ',Staff.is_work_day(w_day)
+print 'Workday: ',Staff.is_work_day(w_day),'\n***********************'
 
 ## Special metods to represent info in HR format
 print(teach_1)
