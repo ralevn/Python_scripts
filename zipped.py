@@ -2,7 +2,7 @@
 Input Format
 
 The first line contains  and  separated by a space. 
- The next  lines contains the space separated marks obtained by students in a particular subject. 
+The next  lines contains the space separated marks obtained by students in a particular subject. 
 
 Output Format
 
@@ -23,7 +23,6 @@ Sample Output
 82.0 
 90.0 
 85.5   
-
 """
 
 studNum,subjNum = map(int,raw_input().split())
