@@ -1,3 +1,4 @@
+#! /usr/local/bin/python2.7
 
 try:
     f = open('text1.txt')
