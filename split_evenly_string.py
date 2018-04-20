@@ -11,9 +11,9 @@ of original substring
 
 mstring, k = input(), int(input())
 
-for i in [mstring[i:k+i] for i in range(0,len(mstring),k)]:
+for ltxt in [mstring[i:k+i] for i in range(0,len(mstring),k)]:
     tmpstr = ''
-    for ch in i:
+    for ch in ltxt:
         if ch in tmpstr: continue
         tmpstr += ch
     print (tmpstr)
