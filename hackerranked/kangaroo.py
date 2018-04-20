@@ -4,7 +4,8 @@
 https://www.hackerrank.com/challenges/kangaroo/problem
 
 difference betwen both kangaroos is (x2 - x1) - (i*v1 -i*v2)
-where "i" is the number of jumps
+where "i" is the number of jumps 
+Check if the generator will yield 0
 """
 
 
@@ -41,4 +42,6 @@ while back[0] < fwd[0]:
         break
 
 print ["NO", "YES"][back[0] == fwd[0]]
+
+Actually checks if (x2 - x1) % (v1 -v2) == 0
 """
