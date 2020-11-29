@@ -1,0 +1,15 @@
+
+.py
+- - - even_lines.py
+- - - file_manipulator.py
+- - - find_string.py
+- - - line_numbers.py
+
+
+- - - file_2
+
+.zip
+
+.txt
+- - - report.txt
+- - - text.txt
